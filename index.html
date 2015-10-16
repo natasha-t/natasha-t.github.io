@@ -2,44 +2,48 @@
 <html>
   <head>
     <title>Natasha Thapliyal</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="imgs/avatar.ico" >
     <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 
-    <style>
-        * {
-          font-family: 'Inconsolata';
-        }
-    </style>
+    <link rel="stylesheet" href="css/trg.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
   </head>
 
   <body>
     <div class="page">
-      <header>
-        <div id="avatar">
-            <h4> Natasha Thapliyal </h4>
-        </div>
+      <header class="container clearfix debug">
 
-        <nav>
-          <ul>
-            <li> Projects </li>
-            <li> About Me </li>
-            <li> Contact </li>
-            <li> Blog </li>
+        <nav class="m-r-s fl-r m-t-xs">
+          <ul class="lis-n debug">
+            <li class="fl-l pad-s debug"><a href="#"> Projects </a></li>
+            <li class="fl-l pad-s debug"><a href="#"> About Me </a></li>
+            <li class="fl-l pad-s debug"><a href="#"> Contact </a></li>
+            <li class="fl-l pad-s debug"><a href="blog/index.html"> Blog </a></li>
           </ul>
         </nav>
 
+        <div class="avatar m-t-xs m-l-s debug">
+            <h4 class="pad-s debug"><a href="#"> Natasha Thapliyal </a></h4>
+        </div>
+
       </header>
 
-      <div id="content">
-        <img src="imgs/avatar-big.png" alt="avatar-Natasha Thapliyal">
-        <img src="imgs/avatar-thought-bubble.png">
-
-      </div>
-
-      <footer>
-        <img src="imgs/social-media.png">
-      </footer>
+      <main role="main" class="container gutters-t gutters-d debug">
+        <section class="col span-11-t main-content debug">
+          <img src="imgs/avatar-big.png" alt="avatar-Natasha Thapliyal">
+          <img src="imgs/avatar-thought-bubble.png" class="m-t-m">
+        </section>
+      </main>
 
     </div>
+
+    <footer class="site-footer debug">
+      <img src="imgs/social-media.png" class="fl-r m-r-s m-b-xs debug">
+    </footer>
+
   </body>
 </html>
 
