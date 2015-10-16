@@ -1,0 +1,106 @@
+* {
+  margin: 0 auto;
+  font-family: 'Inconsolata';
+}
+
+html, body {
+  height: 100%;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+/*.debug {
+  border: 1px solid #C390D4;
+}
+*/
+.page {
+  min-height: 100%;
+  margin-bottom: 0px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+.avatar {
+  width: 20%;
+}
+
+.avatar-img {
+  padding-right: .5em;
+}
+
+
+.main-content {
+  text-align: center;
+}
+
+.site-footer, .page:after {
+  bottom: 0;
+  height: 40px;
+  display: block;
+}
+
+/*Link Styling */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: line-through;
+}
+
+a:visited{
+  color:black;
+  text-decoration: none;
+}
+
+
+.blog-post-title {
+  line-height: 3em;
+}
+
+/*Atomic Elements */
+
+/*padding*/
+.pad-xs { padding: .5em;}
+.pad-s {padding: .75em;}
+
+/*float*/
+.fl-r { float: right;}
+.fl-l { float: left;}
+
+/*margin top*/
+.m-t-xs {margin: 1em;}
+.m-t-m {margin-top: 7em;}
+.m-t-xl {margin-top: 10%;}
+/*margin bottom*/
+.m-b-xs {margin-bottom: 2em;}
+.m-b-s {margin-bottom: 5em;}
+/*margin right*/
+.m-r-xs {margin-right: 1em;}
+.m-r-s {margin-right: 5em;}
+/*margin left*/
+.m-l-s {margin-left: 5em;}
+.m-l-m {margin-left: 7em;}
+
+.lis-n { list-style-type: none;}
+
+.center {text-align: center;}
+
+.marg-xs {margin: 0 0 10px 0;}
+
+
+ul, ol {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}

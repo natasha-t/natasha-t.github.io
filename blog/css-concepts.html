@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+  <title>*natasha's blog*</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../imgs/avatar.ico" >
+
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/trg.css">
+  <link rel="stylesheet" type="text/css" href="../css/default.css">
+  <link rel="stylesheet" type="text/css" href="../css/blog.css">
+</head>
+
+<body>
+
+<div class="page">
+      <header class="container clearfix debug">
+
+        <nav class="m-r-s fl-r m-t-xs">
+          <ul class="lis-n debug">
+            <li class="fl-l pad-s debug"><a href="#"> Projects </a></li>
+            <li class="fl-l pad-s debug"><a href="#"> About Me </a></li>
+            <li class="fl-l pad-s debug"><a href="#"> Contact </a></li>
+            <li class="fl-l pad-s debug"><a href="index.html"> Blog </a></li>
+          </ul>
+        </nav>
+
+        <div class="avatar m-t-xs m-l-s debug">
+          <img src="../imgs/avatar.png" width="40px" height="40px" class="avatar-img fl-l debug">
+          <h4 class="pad-s debug"><a href="../index.html"> Natasha Thapliyal </a></h4>
+        </div>
+
+      </header>
+
+<main role="main" class="container gutters-t gutters-d debug">
+
+  <aside class="fl-l blog-archive m-t-m m-l-m debug">
+      <h3> Archive </h3>
+      <ul class="lis-n">
+        <li><a href="git.html"> Git </a></li>
+        <li><a href="css-concepts.html"> CSS Concepts </a></li>
+        <li><a href="#"> Post 3 </a></li>
+        <li><a href="#"> Post 4 </a></li>
+        <li><a href="#"> Post 5 </a></li>
+        <li><a href="#"> Post 6 </a></li>
+        <li><a href="#"> Post 7 </a></li>
+      </ul>
+  </aside>
+
+  <article class="m-t-m m-b-s blog-post debug">
+    <h2> CSS...yep </h2>
+    <h3> Let us clarify CSS Positioning </h3>
+    <h4> October 15, 2015 </h4>
+    <br>
+        <h4> First, a few things about positioning in CSS </h5>
+          <p> So you've got a simple HTML document with the usual elements like head, body, a couple divs, and a footer. If we take a closer look at those divs (that only have width and height values of 100px), their position on the page (remember with no CSS) they'd appear like so: </p>
+          <img src="../imgs/css-pos-imgs/static.png" class="m-t-xs">
+          <br>
+          <p> As you can see the normal flow of content appears like blocks stacked on top of each other. This is called <em><strong> static </strong></em> positioning. It's the default position for elements. But you must be wondering where's the excitement, the thrill, the pizazz that CSS boasts about all the time? You wanna move shit around, see those divs get into action! Next thing you do is look up on Google "how to position elements css" and up pops the word 'relative.' You plop that into your code and.....uhh what did it do? </p>
+        <br>
+
+        <h4> Relative </h4>
+        <p> Yeah so you're not really sure what putting position: relative; really did to your divs. But here I'll show you a clearer illustration of whats going on. Relative positioning moves an element in relation to <em> where it would have been </em> had it not been moved, leaving a gap where it used to be. Back to our toy blocks, if you keep div 1 at static positioning (default), but you make div 2's position relative and give it a left margin of 50px, you can see div 2 moved left 50px from where it was initially while also leaving a gap of 50px. </p>
+
+        <img src="../imgs/css-pos-imgs/relative.png" class="m-t-xs">
+        <br>
+        <p> Take note that divs 3 and 4 stayed in their static positions while div 2 moved. Relative positioning stays within the scope of the element being re-positioned, without affecting the flow of content. </p>
+
+        <br>
+        <h4> Absolute </h4>
+        <p> Ok cool great. But at some point positioning elements has to affect the surrounding elements right? Otherwise we can't really do that much with CSS and it all becomes a huge let down. Let's explore absolute positioning, then. So we've got these four divs, with divs 1, 3, and 4 being static, and div 2 being relative. What we're gonna do now is remove relative positioning and left 50px from div 2 (so it goes back into the normal content flow) but we'll change div 3 position to absolute and give it a left pixel value of 50 and top of 20px. Check it out: </p>
+
+        <img src="../imgs/css-pos-imgs/absolute.png" class="m-t-xs">
+        <br>
+        <p> WAIT what just happened??? Why is div 4 now riding up against div 2, gettin' all personal and intrusive on div 3's space. RUDE. And what's div 3 doing at the top, chillin by div 1? Well, because we changed div 3's positioning to absolute, it's movement is in relation to its closest positioned ancestor element. Ancestor in this sense refers to the parent or parent of the parent (grandparent) of div 3 which is the body in this example; that's why div 3 is now up near the top of the page by div 1. What's also important to note is that div 3's re-positioning did not leave a gap where it used to be, so div 4 took it as an opportunity to fill in that gap and snuggle up to div 2 (they're dating now btw). </p>
+
+        <br>
+        <h4> Fixed </h4>
+        <p> Ahh fixed. Finally a name that describes exactly what the positioning will do! I think you can guess what effect fixed positioning will have. It won't move! Even when you scroll. Therefore it is fixed. You should also note that fixed positioning is similar to absolute positioning in that it positions relative to its closest positioned ancestor and doesn't leave a gap. But the exception with fixed is that it will not follow the stacking model, so it'll overlap elements. </p>
+        <img src="../imgs/css-pos-imgs/fixed.png" class="m-t-xs">
+        <br>
+
+        <p> Feeling a little less nauseous about CSS positioning? Hopefully all this repositioning business is making at least some sense now. It gets easier as you keep practicing, I promise! </p>
+
+
+
+
+  </article>
+
+</main>
+
+</div>
+
+ <footer class="site-footer debug">
+      <img src="../imgs/social-media.png" class="fl-r m-r-s m-b-xs debug">
+  </footer>
+
+</body>
+</html>
