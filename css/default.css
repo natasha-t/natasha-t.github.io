@@ -14,8 +14,8 @@ html, body {
 
 /*.debug {
   border: 1px solid #C390D4;
-}
-*/
+}*/
+
 .page {
   min-height: 100%;
   margin-bottom: 0px;
@@ -46,6 +46,10 @@ html, body {
   display: block;
 }
 
+.social-media-icon {
+  margin-right: .5em;
+}
+
 /*Link Styling */
 a:link {
   color: black;
@@ -70,7 +74,9 @@ a:visited{
 
 /*padding*/
 .pad-xs { padding: .5em;}
+.pad-b-xs {padding: .5em;}
 .pad-s {padding: .75em;}
+
 
 /*float*/
 .fl-r { float: right;}
@@ -84,6 +90,7 @@ a:visited{
 .m-b-xs {margin-bottom: 2em;}
 .m-b-s {margin-bottom: 5em;}
 /*margin right*/
+.m-r-xxs {margin-right: .01em}
 .m-r-xs {margin-right: 1em;}
 .m-r-s {margin-right: 5em;}
 /*margin left*/

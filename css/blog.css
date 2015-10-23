@@ -16,3 +16,35 @@ p {
 p {
   text-indent: 10px;
 }
+
+.blog-header {
+  padding-bottom: .5em;
+}
+
+.ruby-code {
+background: #272822;
+overflow:auto;
+width:auto;
+border:solid gray;
+border-width:.1em .1em .1em .8em;
+padding:.2em .6em;
+margin: 0;
+line-height: 125%;
+}
+
+.pre-style {
+margin: 0;
+line-height: 125%;
+}
+
+.white {
+  color: #f8f8f2;
+}
+
+.pink {
+  color: #f92672;
+}
+
+.string {
+  color: #e6db74;
+}

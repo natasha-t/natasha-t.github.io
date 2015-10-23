@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  <title>*natasha's blog*</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../imgs/avatar.ico" >
+
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/trg.css">
+  <link rel="stylesheet" type="text/css" href="../css/default.css">
+  <link rel="stylesheet" type="text/css" href="../css/blog.css">
+</head>
+
+<body>
+
+<div class="page">
+      <header class="container clearfix debug">
+
+        <nav class="m-r-s fl-r m-t-xs">
+          <ul class="lis-n debug">
+            <li class="fl-l pad-s debug"><a href="#"> Projects </a></li>
+            <li class="fl-l pad-s debug"><a href="#"> About Me </a></li>
+            <li class="fl-l pad-s debug"><a href="#"> Contact </a></li>
+            <li class="fl-l pad-s debug"><a href="index.html"> Blog </a></li>
+          </ul>
+        </nav>
+
+        <div class="avatar m-t-xs m-l-s debug">
+          <img src="../imgs/avatar.png" width="40px" height="40px" class="avatar-img fl-l debug">
+          <h4 class="pad-s debug"><a href="../index.html"> Natasha Thapliyal </a></h4>
+        </div>
+
+      </header>
+
+<main role="main" class="container gutters-t gutters-d debug">
+
+  <aside class="fl-l blog-archive m-t-m m-l-m debug">
+      <h3> Archive </h3>
+      <ul class="lis-n">
+        <li><a href="git.html"> Git </a></li>
+        <li><a href="css-concepts.html"> CSS Concepts </a></li>
+        <li><a href="arrays-hashes.html"> Arrays & Hashes </a></li>
+        <li><a href="#"> Post 4 </a></li>
+        <li><a href="#"> Post 5 </a></li>
+        <li><a href="#"> Post 6 </a></li>
+        <li><a href="#"> Post 7 </a></li>
+      </ul>
+  </aside>
+
+  <article class="m-t-m m-b-s blog-post debug">
+    <h2> Arrays 'n Hashes </h2>
+    <h3> A place to store your objects...how convenient! </h3>
+    <h4> October 23, 2015 </h4>
+    <br>
+
+    <h4 class="blog-header"> Ar-r-rays! </h4>
+        <p> As you've continued your way through your precious intro to programming journey you must have come across arrays by now because how can you not? It just seems to make a lot of sense for there to be an option to store data in a list format, where items are separated by commas. And that is precisely what an array is. Say you have a group of your most prized posessions. Right now in your program you have each possession saved in an in its own variable. You may have something like this: <!-- HTML generated using hilite.me / EDIT LATER NOT PRETTY CODE--><div class="ruby-code"><pre class="pre-style"><span class="white">possession_1</span> <span class="pink">=</span> <span class="string">&quot;Latte-stained Moleskine&quot;</span>
+<span class="white">possession_2</span> <span class="pink">=</span> <span class="string">&quot;Monster&#39;s Inc Boo Doll&quot;</span>
+<span class="white">possession_3</span> <span class="pink">=</span> <span class="string">&quot;Japanese Food Erasers&quot;</span>
+</pre></div></p>
+
+        <br>
+
+        <p> You could keep going forever! But having these possesions laid out like this in the program doesn't allow you to do that much with them. What if you wanted to add more possesions? Or remove some? Or have each of those possessions do something, like get sorted alphabetically, all in one quick motion? Kinda hard to do all that with your current list of variables. What would be ideal is to <em> group </em> these possesions togethr into one entity. Arrays to the rescue! All you've gots to do is plop those possessions into an array and you have a very nifty and easily accessbile collection of posessions. Let's name your array, like mah_possessions, and place them between two brackets [], also known as the literal constructor. Now you have
+        <!-- HTML generated using hilite.me --><div class="ruby-code"><pre class="pre-style"><span class="white">mah_possessions</span> <span class="pink">=</span> <span class="pink">[</span><span class="white">possession_1,</span> <span class="white">possession_2,</span> <span class="white">possession_3</span><span class="pink">]</span>
+</pre></div>
+
+        <br>
+
+        <p> Coolio, right?. But how do you access each possesion? Easy. Since an array is a linear and ordered list of objects (in this case, strings or text), each item in the array is indexed. The starting index value is 0, not 1 like you may think, but 0 because, well, computers. To get at possession_1, you simply type <code> mah_possessions[0] </code> and voila the computer hands you your latte-stained Moleskine. As you can guess, to get <code> possession_2 </code> and <code> possession_3 </code> you type <code> mah_possessions[1] </code> and <code> mah_possession[2] </code>. What you've gotta do now is check out the Ruby docs for array manipulation because it's quite remarkable what you can continue doing with arrays in Ruby. It's like a treasure-trove of methods, like .push to add to your possessions array, or .pop to remove some. Check them all out <a href="http://ruby-doc.org/core-1.9.3/Array.html" target="_blank"> here</a>.</p>
+
+     <br>
+
+      <h4 class="blog-header"> Hash [browns] <h4>
+        <p> Ok so turns out Hashes in Ruby are not perfectly golden fried potatoes but actually another way to house a collection of objects in your program. Though that would be pretty awesome if everytime you made a new hash in Ruby your computer ejected a fresh, warm hash brown for your enjoyment; you could even program an option to cook tater tots too, because tater tots are kinda like chopped up hash browns right? Unfortunately computers and programming languages can't do that (YET) so the use of hashes in Ruby will have to be limited to a form of storage for your program's objects. Well actually that's not limiting at all; hasehs are, in fact, highly capable container objects that are much more dynamic in terms of storing data than arrays. </p>
+        <p> The structure of a hash consists of what's called key/value pairs. Keys are like labels for the values you want to be in the hash. There can only be one type of key per hash, but you can of course have duplicate values for any given key. To make this less abstract-sounding lets go back to our mah_possessions array. Say we want to expand on this information and transform the data into a hash. We could name our new hash <code> mah_possessions_hash </code> and begin by populating its contents in between two curly brackets {} (literal constructor). Your mah_posessions_hash object would look something like this: <!-- HTML generated using hilite.me --><div class="ruby-code"><pre class="pre-style"><span class="white">mah_possessions_hash</span> <span class="pink">=</span> <span class="white">{</span>
+<span class="white">possession_1:</span> <span class="string">&quot;Latte-stained Moleskine&quot;</span><span class="white">,</span>
+<span class="white">possession_2:</span> <span class="string">&quot;Monster&#39;s Inc Boo Doll&quot;</span><span class="white">,</span>
+<span class="white">possession_3:</span> <span class="string">&quot;Japanese Food Erasers&quot;</span>
+<span class="white">}</span>
+</pre></div>
+
+    <br>
+      <p> As you can see the possession number and its associated value are paired together in a hash via a colon. It's great how clear this information is laid our for you. To access a hash value, you have to use the key it's associated with (as opposed to an array's index value). So to get "Japanese Food Erasers" you'd write <code> mah_possessions_hash[:possesion_3] </code>(note that the colon goes before the key name). Hashes can contain as many key/value pairs as you want, and also allow for a host of manipulation which can be accessed <a href="http://ruby-doc.org/core-1.9.3/Hash.html"> here</a>.
+              </p>
+
+        <br>
+  </article>
+
+</main>
+
+</div>
+
+   <footer class="site-footer debug">
+      <a href="https://instagram.com/nnatsho/" target="_blank"><img src="../imgs/social-media-icons/instagram.png" class="fl-r m-r-s m-b-xs debug"></a>
+      <a href="https://www.linkedin.com/in/natashathapliyal" target="_blank"><img src="../imgs/social-media-icons/linkedin.png" class="social-media-icon fl-r m-b-xs debug"></a>
+      <a href="https://github.com/natasha-t" target="_blank"><img src="../imgs/social-media-icons/github.png" class="social-media-icon fl-r m-b-xs debug"></a>
+      <a href="https://www.facebook.com/natasha.thapliyal" target="_blank"><img src="../imgs/social-media-icons/facebook.png" class="social-media-icon m-r-xxs fl-r m-b-xs debug"></a>
+    </footer>
+
+
+</body>
+</html>
