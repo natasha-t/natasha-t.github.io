@@ -3,10 +3,10 @@
   <title>*natasha's blog*</title>
   <meta charset="UTF-8">
   <link rel="shortcut icon" href="../imgs/avatar.ico" >
-  
+
   <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-  
+
 
   <link rel="stylesheet" href="css/trg.css">
   <link rel="stylesheet" type="text/css" href="../css/default.css">
@@ -21,8 +21,8 @@
         <nav class="m-r-s fl-r m-t-xs">
           <ul class="lis-n debug">
             <li class="fl-l pad-s debug"><a href="#"> Projects </a></li>
-            <li class="fl-l pad-s debug"><a href="#"> About Me </a></li>
-            <li class="fl-l pad-s debug"><a href="#"> Contact </a></li>
+            <li class="fl-l pad-s debug"><a href="../about.html"> About Me </a></li>
+            <li class="fl-l pad-s debug"><a href="../contact.html"> Contact </a></li>
             <li class="fl-l pad-s debug"><a href="index.html"> Blog </a></li>
           </ul>
         </nav>
@@ -61,14 +61,14 @@
 
      <br>
 
-      <h4 class="blog-header"> How does git help you keep track of changes? <h4>
+      <h4 class="blog-header"> How does git help you keep track of changes? </h4>
         <p> Lemme explain what exactly this 'version control software' is. Git is the name of this special software and it's the mystical (it's not actually mystical but you'll FEEL mystical using it) power behind all those changes you've been tracking. It does the tracking FOR YOU. </p>
         <p> Let's say you're back at it with that Javascript sign-in page. You fer sure want git to know about any edits to this part of the code. So, you open up good 'ol Terminal. This is where all the git magic happens. Through a system called branching, you seperate from the master version of your code with 'branches' or copies of the master version. It's best that you never work directly off your master version because, well it's the master. If you screw up the master, an actual master of a Scottish manor will float to your house and reprimand you, IN PERSON. You won't get physically hurt, but the shame will be there. So don't let that happen. Work from a branch. Now that you have created a new branch from the master by typing 'git checkout -b branch_name' you can work with the code where the user's sign-up information is stored. Perfecto, you're on the right track towards letting git know you've made a change. </p>
         <p> Next, you type 'git status' and see that the latest edit (that JS signup page) has not been 'staged.' Staging is the step where you get your file camera-ready for what's called a commit. You must stage your file before 'committing' to a change. To stage a change you simply type 'git add [FILE NAME]'. Now you can proceed to committing the change so git can track it. You type 'git commit -m "commit message." Now don't make a lousy commit message like "sign up page". 'Sign-up page' is lousy for a couple reasons. First, it must include a verb, specifically in the imperative, present tense. So you'd need to edit that message to "Add sign-up page." Secondly, you'll want to be specific, but keeping the number of characters to between 50 and 72. Why? Read about it <a href="http://365git.tumblr.com/post/3308646748/writing-git-commit-messages">here</a>. A re-edit of the commit message would result in "Grab user value and store in variable." See the difference? So specific! Now that code edit is recorded and you, along with your team members, can refer to it whenever, even after another vacation to Cancun 'cus you heard Kim Kardashian is going to be there and you want to witness botox injections gone wrong. No wonder she wears long duster coats more nowadays. </p>
 
         <br>
 
-       <h4 class="blog-header"> Why use GitHub to store your code? <h4>
+       <h4 class="blog-header"> Why use GitHub to store your code? </h4>
           <p> Thanks to your grandma's denture specialist's secretary's cousin's help of recruiting more zen developers like yourself to work on your app, you've got a team. There's just one problem. Everyone is located in a different country. You know that the Internet is how you can share each other's code, but what about git? Everyone only has git on their own, local computers. Well some people thought of that and sorted out the logisitcs for you by creating a website called GitHub. GitHub is the pretty online coordinator with git that houses all your code in one place, that's accessible to anyone on your team, and allows for changes to be tracked chronologically and visually. Yes you can actually compare the old and new changes to your code side by side. It's suh great. Now your team member in Réunion can checkout the latest change your associate in Croatia made thanks to Github. </p>
   </article>
 

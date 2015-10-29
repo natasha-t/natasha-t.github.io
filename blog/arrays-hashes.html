@@ -19,8 +19,8 @@
         <nav class="m-r-s fl-r m-t-xs">
           <ul class="lis-n debug">
             <li class="fl-l pad-s debug"><a href="#"> Projects </a></li>
-            <li class="fl-l pad-s debug"><a href="#"> About Me </a></li>
-            <li class="fl-l pad-s debug"><a href="#"> Contact </a></li>
+            <li class="fl-l pad-s debug"><a href="../about.html"> About Me </a></li>
+            <li class="fl-l pad-s debug"><a href="../contact.html"> Contact </a></li>
             <li class="fl-l pad-s debug"><a href="index.html"> Blog </a></li>
           </ul>
         </nav>
@@ -71,14 +71,14 @@
 
      <br>
 
-      <h4 class="blog-header"> Hash [browns] <h4>
+      <h4 class="blog-header"> Hash [browns] </h4>
         <p> Ok so turns out Hashes in Ruby are not perfectly golden fried potatoes but actually another way to house a collection of objects in your program. Though that would be pretty awesome if everytime you made a new hash in Ruby your computer ejected a fresh, warm hash brown for your enjoyment; you could even program an option to cook tater tots too, because tater tots are kinda like chopped up hash browns right? Unfortunately computers and programming languages can't do that (YET) so the use of hashes in Ruby will have to be limited to a form of storage for your program's objects. Well actually that's not limiting at all; hasehs are, in fact, highly capable container objects that are much more dynamic in terms of storing data than arrays. </p>
         <p> The structure of a hash consists of what's called key/value pairs. Keys are like labels for the values you want to be in the hash. There can only be one type of key per hash, but you can of course have duplicate values for any given key. To make this less abstract-sounding lets go back to our mah_possessions array. Say we want to expand on this information and transform the data into a hash. We could name our new hash <code> mah_possessions_hash </code> and begin by populating its contents in between two curly brackets {} (literal constructor). Your mah_posessions_hash object would look something like this: <!-- HTML generated using hilite.me --><div class="ruby-code"><pre class="pre-style"><span class="white">mah_possessions_hash</span> <span class="pink">=</span> <span class="white">{</span>
 <span class="white">possession_1:</span> <span class="string">&quot;Latte-stained Moleskine&quot;</span><span class="white">,</span>
 <span class="white">possession_2:</span> <span class="string">&quot;Monster&#39;s Inc Boo Doll&quot;</span><span class="white">,</span>
 <span class="white">possession_3:</span> <span class="string">&quot;Japanese Food Erasers&quot;</span>
 <span class="white">}</span>
-</pre></div>
+</pre></div></p>
 
     <br>
       <p> As you can see the possession number and its associated value are paired together in a hash via a colon. It's great how clear this information is laid our for you. To access a hash value, you have to use the key it's associated with (as opposed to an array's index value). So to get "Japanese Food Erasers" you'd write <code> mah_possessions_hash[:possesion_3] </code>(note that the colon goes before the key name). Hashes can contain as many key/value pairs as you want, and also allow for a host of manipulation which can be accessed <a href="http://ruby-doc.org/core-1.9.3/Hash.html"> here</a>.

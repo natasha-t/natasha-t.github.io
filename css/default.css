@@ -11,8 +11,8 @@ html, body {
   overflow: auto;
   zoom: 1;
 }
-
-/*.debug {
+/*
+.debug {
   border: 1px solid #C390D4;
 }*/
 
@@ -40,15 +40,34 @@ html, body {
   text-align: center;
 }
 
+.about-title {
+  font-size: 2em;
+}
+
+.about {
+  color: #9359BA;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.social-media-contact {
+  text-align: center;
+}
+
+.social-contact {
+  margin-right: 15px;
+}
+
+.social-media-icon {
+  margin-right: .5em;
+}
+
 .site-footer, .page:after {
   bottom: 0;
   height: 40px;
   display: block;
 }
 
-.social-media-icon {
-  margin-right: .5em;
-}
 
 /*Link Styling */
 a:link {
@@ -84,6 +103,7 @@ a:visited{
 
 /*margin top*/
 .m-t-xs {margin: 1em;}
+.m-t-s {margin: 2em;}
 .m-t-m {margin-top: 7em;}
 .m-t-xl {margin-top: 10%;}
 /*margin bottom*/
