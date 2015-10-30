@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+  <title>*blog*</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../imgs/avatar.ico" >
+
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/trg.css">
+  <link rel="stylesheet" type="text/css" href="../css/default.css">
+  <link rel="stylesheet" type="text/css" href="../css/blog.css">
+</head>
+
+<body>
+
+<div class="page">
+      <header class="container clearfix debug">
+
+        <nav class="m-r-s fl-r m-t-xs">
+          <ul class="lis-n debug">
+            <li class="fl-l pad-s debug"><a href="#"> Projects </a></li>
+            <li class="fl-l pad-s debug"><a href="../about.html"> About Me </a></li>
+            <li class="fl-l pad-s debug"><a href="../contact.html"> Contact </a></li>
+            <li class="fl-l pad-s debug"><a href="index.html"> Blog </a></li>
+          </ul>
+        </nav>
+
+        <div class="avatar m-t-xs m-l-s debug">
+          <img src="../imgs/avatar.png" width="40px" height="40px" class="avatar-img fl-l debug">
+          <h4 class="pad-s debug"><a href="../index.html"> Natasha Thapliyal </a></h4>
+        </div>
+
+      </header>
+
+<main role="main" class="container gutters-t gutters-d debug">
+
+  <aside class="fl-l blog-archive m-t-m m-l-m debug">
+      <h3> Archive </h3>
+      <ul class="lis-n">
+        <li><a href="git.html"> Git </a></li>
+        <li><a href="css-concepts.html"> CSS Concepts </a></li>
+        <li><a href="arrays-hashes.html"> Arrays & Hashes </a></li>
+        <li><a href="enumerable-methods.html"> Enumerable Methods </a></li>
+        <li><a href="#"> Post 5 </a></li>
+        <li><a href="#"> Post 6 </a></li>
+        <li><a href="#"> Post 7 </a></li>
+      </ul>
+  </aside>
+
+  <article class="m-t-m m-b-s blog-post debug">
+    <h2> Enumerable Methods </h2>
+    <h3> #map </h3>
+    <h4> October 29, 2015 </h4>
+    <br>
+    <h4> Ze Map Method </h4>
+        <p> Simply put, the map method iterates through a collection of data, like a hash, array, or set, performs the specified code on each element of the collection, and returns a new array. Here's an example: Let's say we want to make internet slang words ALL CAPS, because, well sometimes you just need to express yourself more aggresively.<!-- HTML generated using hilite.me / EDIT LATER NOT PRETTY CODE--><div class="ruby-code"><pre class="pre-style"><span class="white">internet_slang</span> <span class="pink">=</span> <span class="pink">[</span><span class="string">&quot;omg&quot;</span><span class="white">,</span> <span class="string">&quot;lol&quot;</span><span class="white">,</span> <span class="string">&quot;ermahgerd&quot;</span><span class="white">,</span><span class="string">&quot;haha&quot;</span><span class="pink">]</span>
+
+<span class="white">internet_words</span><span class="pink">.</span><span class="white">map</span> <span class="white">{</span><span class="pink">|</span><span class="white">word</span><span class="pink">|</span> <span class="white">word</span><span class="pink">.</span><span class="white">upcase</span><span class="white">}</span>
+</pre></div>
+
+
+
+        <p> The above map method would return: </p>
+        <div class="ruby-code"><pre class="pre-style"><span class="pink">[</span><span class="string">&quot;OMG&quot;</span><span class="white">,</span> <span class="string">&quot;LOL&quot;</span><span class="white">,</span> <span class="string">&quot;ERMAHGERD&quot;</span><span class="white">,</span><span class="string">&quot;HAHA&quot;</span><span class="pink">]</span></pre></div>
+
+     <br>
+
+
+      <p> What's important to note here is the <em> return </em> value that map produces. In the above example we didn't include 'puts' or 'p' so nothing was actually printed to the console, but the return value was an array of all upercase internet slang words. If we were to observe what using 'puts' or 'p' would print to the console, we'll see that there's an apparent difference in return values between the two.</p>
+      <br>
+      <img src="../imgs/irb_map.png" width="750px">
+      <br>
+      <p> See what happened there? When we 'puts' word.upcase, the internet slang words were capitalized, but the return value was actually nil for each word. For 'p', the words were both printed and returned as all uppercase. Though this is illustration reflects what 'puts' and 'p' do, it's important to take note of the fact that an array of nils can be returned using this method if 'puts' is used. </p>
+
+       <br>
+
+       <h4> Map! BANG BANG </h4>
+      <p> This method also has an evil brother named map! (the exclamation point is called a 'bang'). He's considered evil because this method will literally destroy the inputted object by replacing the original content with whats returned by the method. ERMAHGERD! If we were to check what values internet_slang has after running through the map method, it would still have the all lowercase words. But what if we didn't want the lowercase words to take up precious memory space, and we just wanted to nix it. This is where we'll call up map! and ask him to complete a special mission of destruction (he likes those kinds of missions). We'd call map! on internet_slang and get the same result (all uppercase words). But to see what else map! did when everyone was asleep, at the darkest hour of the night, we'll have to consult irb. </p>
+      <br>
+      <img src="../imgs/irb_map!.png">
+      <br>
+      <p> EGAD!! map! killed the lowercase internet slang words! What horror. Well not really because now we have freed memory space in our program, but it is somewhat tragic that someone had to get hurt in the process. The point here is that it ultimately depends on you, the programmer, to decide what you want to destory or keep. This a matter of using destructive vs non-destructive methods, but that's another blog post topic entirely. In the case of map and map!, we've got a powerful method that iterates through an object and returns an array of new values based on the code in the method's code block. Just don't forget about the return values of map! </p>
+
+  </article>
+
+</main>
+
+</div>
+
+   <footer class="site-footer debug">
+      <a href="https://instagram.com/nnatsho/" target="_blank"><img src="../imgs/social-media-icons/instagram.png" class="fl-r m-r-s m-b-xs debug"></a>
+      <a href="https://www.linkedin.com/in/natashathapliyal" target="_blank"><img src="../imgs/social-media-icons/linkedin.png" class="social-media-icon fl-r m-b-xs debug"></a>
+      <a href="https://github.com/natasha-t" target="_blank"><img src="../imgs/social-media-icons/github.png" class="social-media-icon fl-r m-b-xs debug"></a>
+      <a href="https://www.facebook.com/natasha.thapliyal" target="_blank"><img src="../imgs/social-media-icons/facebook.png" class="social-media-icon m-r-xxs fl-r m-b-xs debug"></a>
+    </footer>
+
+</body>
+</html>
