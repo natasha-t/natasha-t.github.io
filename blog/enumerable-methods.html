@@ -65,13 +65,22 @@
 
      <br>
 
-      <h4> Heading/Question </h4>
-        <p> Landjaeger flank short loin meatball brisket salami leberkas venison. Pig sirloin ribeye, strip steak bacon frankfurter shank drumstick kielbasa. Prosciutto pork chop salami beef ribs pork chicken ham strip steak ground round chuck. Meatloaf strip steak chuck t-bone cow ground round pancetta drumstick tenderloin. Cupim ham hock prosciutto shankle pig. Drumstick pork brisket bresaola tongue ham fatback pig. </p>
 
-        <br>
+      <p> What's important to note here is the <em> return </em> value that map produces. In the above example we didn't include 'puts' or 'p' so nothing was actually printed to the console, but the return value was an array of all upercase internet slang words. If we were to observe what using 'puts' or 'p' would print to the console, we'll see that there's an apparent difference in return values between the two.</p>
+      <br>
+      <img src="../imgs/irb_map.png" width="750px">
+      <br>
+      <p> See what happened there? When we 'puts' word.upcase, the internet slang words were capitalized, but the return value was actually nil for each word. For 'p', the words were both printed and returned as all uppercase. Though this is illustration reflects what 'puts' and 'p' do, it's important to take note of the fact that an array of nils can be returned using this method if 'puts' is used. </p>
 
-       <h4> Heading/Question </h4>
-          <p> Spare ribs tri-tip pancetta turkey bresaola prosciutto tongue strip steak hamburger. Boudin jowl beef beef ribs strip steak filet mignon jerky tongue salami ball tip pig cupim. Short loin hamburger bresaola alcatra frankfurter picanha. Landjaeger tenderloin fatback biltong ball tip kevin tail filet mignon flank cow picanha. Tail hamburger jerky, short loin leberkas turkey shoulder. Kielbasa landjaeger alcatra chicken ham hock. </p>
+       <br>
+
+       <h4> Map! BANG BANG </h4>
+      <p> This method also has an evil brother named map! (the exclamation point is called a 'bang'). He's considered evil because this method will literally destroy the inputted object by replacing the original content with whats returned by the method. ERMAHGERD! If we were to check what values internet_slang has after running through the map method, it would still have the all lowercase words. But what if we didn't want the lowercase words to take up precious memory space, and we just wanted to nix it. This is where we'll call up map! and ask him to complete a special mission of destruction (he likes those kinds of missions). We'd call map! on internet_slang and get the same result (all uppercase words). But to see what else map! did when everyone was asleep, at the darkest hour of the night, we'll have to consult irb. </p>
+      <br>
+      <img src="../imgs/irb_map!.png">
+      <br>
+      <p> EGAD!! map! killed the lowercase internet slang words! What horror. Well not really because now we have freed memory space in our program, but it is somewhat tragic that someone had to get hurt in the process. The point here is that it ultimately depends on you, the programmer, to decide what you want to destory or keep. This a matter of using destructive vs non-destructive methods, but that's another blog post topic entirely. In the case of map and map!, we've got a powerful method that iterates through an object and returns an array of new values based on the code in the method's code block. Just don't forget about the return values of map! </p>
+
   </article>
 
 </main>
