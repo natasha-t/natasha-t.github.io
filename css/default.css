@@ -11,8 +11,8 @@ html, body {
   overflow: auto;
   zoom: 1;
 }
-/*
-.debug {
+
+/*.debug {
   border: 1px solid #C390D4;
 }*/
 
@@ -50,6 +50,18 @@ html, body {
   line-height: 1.5em;
 }
 
+.name {
+  text-decoration: underline;
+}
+
+.dev {
+  color: #19ABB5;
+}
+
+a:hover .dev {
+  text-decoration: none;
+}
+
 .social-media-contact {
   text-align: center;
 }
@@ -76,6 +88,10 @@ a:link {
 }
 a:hover {
   color: black;
+  text-decoration: line-through;
+}
+
+a:active {
   text-decoration: line-through;
 }
 
