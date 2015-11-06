@@ -48,23 +48,22 @@
   </aside>
 
   <article class="m-t-m m-b-s blog-post debug">
-    <h2> Title </h2>
-    <h3> Sub-title </h3>
-    <h4> Date </h4>
+    <h2> Ruby Classes </h2>
+    <h3> Recess is over kids! Time for class </h3>
+    <h4> November 5, 2015 </h4>
     <br>
-    <h4> Heading/Question </h4>
-        <p> Bacon ipsum dolor amet strip steak swine pork, turducken pork belly meatloaf hamburger alcatra beef ribs ribeye ham hock cupim corned beef frankfurter kielbasa. Pastrami tongue corned beef flank pork loin cow pancetta. Tenderloin jowl prosciutto, corned beef sirloin ball tip cow bacon pig biltong rump turducken shank doner alcatra. Tenderloin turkey chicken, shankle boudin meatball kielbasa. </p>
-        <p> Meatloaf strip steak sirloin, capicola cupim brisket meatball chuck turkey. Strip steak flank sirloin ground round, pork belly doner swine tenderloin. Pork chop rump flank ham corned beef leberkas meatloaf. Frankfurter bacon ham leberkas chuck, beef pig corned beef pork chop tenderloin tail fatback filet mignon picanha. Salami ball tip pork, flank doner rump chuck meatloaf spare ribs pig beef ribs frankfurter hamburger corned beef tongue. Short loin shoulder pork loin shankle ribeye biltong, ball tip hamburger boudin fatback cow sirloin. Boudin salami brisket flank andouille. </p>
+    <h4> Using Classes in Ruby To Get Things Done </h4>
+        <p> It's common to see comparisons made between object-oriented programming (everything in the program is classified as an 'Object') and the real-world, where objects made by the programmer can <em> do </em> things. Objects we see IRL consist of characteristics and behaviors. For example, if you have a tea kettle object, you think of its associated behaviors as 'load tea leaves,' 'add hot water,' 'steep', 'pour.' To simulate a tea kettle in a program you could write a bunch of methods that carry out those functions individually, but it doesn't seem cohesive. This is looking like a *golden* opportunity to make a class called TeaKettle. If we have a class TeaKettle, we can bundle the behaviors mentioned above, simply call the methods on TeaKettle, and our nifty TeaKettle will tell us exactly how to make a soothing cup o' tea. Check it out: </p>
+        <br>
+        <img src="../imgs/teakettle-screenshot.png">
+        <br>
+        <h4> OUTPUT </h4>
+        <img src="../imgs/teakettle-run.png">
+        <br>
+        <p> Let's take a deeper look at this Tea Kettle Class. We've started out by initializing the TeaKettle class by requiring  the user to specify a 'tea_type.' That input is taken in as an instance variable, which is a variable that exists solely within a class and is denoted by an '@' sign. By making tea_type an instance variable, we can use that variable freely within the class and interchangeably among methods in that class. You can think of the @tea_type instance variable as a characteristic of the TeaKettle class. You can't, however, use @tea_type outside of the class. You may have noticed tea_type = "Earl Grey" below the class, but that tea_type is a <em> local </em> variable (no '@' sign), and does not interfere with @tea_type INSIDE the class. This distinction has to do with 'scope' of a variable (a topic for another blog post). Next you notice a bunch of methods that describe actions associated with preparing tea in a tea kettle, like load tea leaves, add hot water, steep, and pour. The last method in this sequence is make_tea (line 27). Now what we've done here is <em> combine </em> the above methods into ONE method, called make_tea. By placing the other methods in one method, you can pass related data into a single method, then simply call that one method outside the class to output all the actions. But before you get cranky because you haven't had your morning tea yet, you have to actually create a new TeaKettle class and initialize it. That's done on line 48. Don't forget to add what kind of tea you want by setting the local variable tea_type to your favorite tea (mine's Earl Grey). Call make_tea on that new cup of tea and HAZAH you've got a spankin' cup of tea. </p>
 
      <br>
 
-      <h4> Heading/Question </h4>
-        <p> Landjaeger flank short loin meatball brisket salami leberkas venison. Pig sirloin ribeye, strip steak bacon frankfurter shank drumstick kielbasa. Prosciutto pork chop salami beef ribs pork chicken ham strip steak ground round chuck. Meatloaf strip steak chuck t-bone cow ground round pancetta drumstick tenderloin. Cupim ham hock prosciutto shankle pig. Drumstick pork brisket bresaola tongue ham fatback pig. </p>
-
-        <br>
-
-       <h4> Heading/Question </h4>
-          <p> Spare ribs tri-tip pancetta turkey bresaola prosciutto tongue strip steak hamburger. Boudin jowl beef beef ribs strip steak filet mignon jerky tongue salami ball tip pig cupim. Short loin hamburger bresaola alcatra frankfurter picanha. Landjaeger tenderloin fatback biltong ball tip kevin tail filet mignon flank cow picanha. Tail hamburger jerky, short loin leberkas turkey shoulder. Kielbasa landjaeger alcatra chicken ham hock. </p>
   </article>
 
 </main>
