@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+  <title>*natasha's blog*</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../imgs/avatar.ico" >
+
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/trg.css">
+  <link rel="stylesheet" type="text/css" href="../css/default.css">
+  <link rel="stylesheet" type="text/css" href="../css/blog.css">
+</head>
+
+<body>
+
+<div class="page">
+      <header class="container clearfix debug">
+
+        <nav class="m-r-s fl-r m-t-xs">
+          <ul class="lis-n debug">
+            <li class="fl-l pad-s debug"><a href="../projects/index.html"> Projects </a></li>
+            <li class="fl-l pad-s debug"><a href="../about.html"> About Me </a></li>
+            <li class="fl-l pad-s debug"><a href="../contact.html"> Contact </a></li>
+            <li class="fl-l pad-s debug"><a href="index.html"> Blog </a></li>
+          </ul>
+        </nav>
+
+        <div class="avatar m-t-xs m-l-s debug">
+          <img src="../imgs/avatar.png" width="40px" height="40px" class="avatar-img fl-l debug">
+          <h4 class="pad-s debug"><a href="../index.html"> Natasha Thapliyal </a></h4>
+        </div>
+
+      </header>
+
+<main role="main" class="container gutters-t gutters-d debug">
+
+  <aside class="fl-l blog-archive m-t-m m-l-s debug">
+      <h3> Archive </h3>
+      <ul class="lis-n">
+        <li><a href="git.html"> Git </a></li>
+        <li><a href="css-concepts.html"> CSS Concepts </a></li>
+        <li><a href="arrays-hashes.html"> Arrays & Hashes </a></li>
+        <li><a href="enumerable-methods.html"> Enumerable Methods </a></li>
+        <li><a href="ruby-classes.html"> Ruby Classes </a></li>
+        <li><a href="javascript.html"> Javascript </a></li>
+        <li><a href="#"> Post 7 </a></li>
+      </ul>
+  </aside>
+
+  <article class="m-t-m m-b-s blog-post debug">
+    <h2> Ruby Hashes vs Javascript Objects </h2>
+    <h3> The Comparison is ON!! </h3>
+    <h4> November 16, 2015 </h4>
+    <br>
+      <h4> Ruby Hashes (Literal Constructor) </h4>
+        <pre>
+          <code>
+            ruby_hash = {
+
+              "key 1" => "I'm key 1's value!",
+              "key 2" => "You ain't that special key 1 cuz I'm key 2's value",
+              "key 3" => "Calm down guys"
+
+            }
+          </code>
+        </pre>
+        <p> We have just created a hash in Ruby using the literal constructor method, with three keys (as strings) and their corresponding values by using the "=>" syntax. To access the value of say the first key, we'd write <code> ruby_hash["key 1"] </code>. To <em>change</em> the value, all we'd have to do is set <code> ruby_hash["key 1"] </code> equal to something else like <code> ruby_hash["key 1"] = "I am the best cuz I'm numba one"</code>. Simple right? Let's check out how storing info in a somewhat similar fashion works in Javascript.
+        </p>
+
+     <br>
+
+      <h4> Javascript Objects (Literal Constructor) </h4>
+        <pre>
+          <code>
+            javascriptObject = {
+
+              key1: "I'm key1's value",
+              key2: "I respect you key 1",
+              key3: "chicken noodle soup"
+
+            };
+          </code>
+        </pre>
+
+      <p> There seems to be a bit more respect amongst the keys here in Javscript's object. In Javascript, however, keys are more often referred to as 'properties' of an object. To access the value of a property, we'd use dot notation, like so <code> javascriptObject.key1 </code>. Changing the value would be the same as in Ruby, where we'd set <code> javascriptObject.key1 </code> equal to something else, like <code> javascriptObject.key1 = "pizza shaped cloud" </code>. </p>
+
+      <br>
+
+      <h4> Debrief </h4>
+      <p> I have very quickly illustrated the main syntax differences between a Hash in Ruby and an Object in Javascript using the Literal Constructor method, but the functions/uses of both are fundamentally the same, as in they both store information in the form of key/value pairs. </p>
+
+        <br>
+  </article>
+
+</main>
+
+</div>
+
+   <footer class="site-footer debug">
+      <a href="https://instagram.com/nnatsho/" target="_blank"><img src="../imgs/social-media-icons/instagram.png" class="fl-r m-r-s m-b-xs debug"></a>
+      <a href="https://www.linkedin.com/in/natashathapliyal" target="_blank"><img src="../imgs/social-media-icons/linkedin.png" class="social-media-icon fl-r m-b-xs debug"></a>
+      <a href="https://github.com/natasha-t" target="_blank"><img src="../imgs/social-media-icons/github.png" class="social-media-icon fl-r m-b-xs debug"></a>
+      <a href="https://www.facebook.com/natasha.thapliyal" target="_blank"><img src="../imgs/social-media-icons/facebook.png" class="social-media-icon m-r-xxs fl-r m-b-xs debug"></a>
+    </footer>
+
+</body>
+</html>
