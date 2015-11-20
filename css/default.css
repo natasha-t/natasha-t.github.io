@@ -40,6 +40,10 @@ html, body {
   text-align: center;
 }
 
+.project-title {
+  line-height: 3em;
+}
+
 .about-title {
   font-size: 2em;
 }
