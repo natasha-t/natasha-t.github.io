@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+  <title>*natasha's blog*</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="../imgs/avatar.ico" >
+
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/trg.css">
+  <link rel="stylesheet" type="text/css" href="../css/default.css">
+  <link rel="stylesheet" type="text/css" href="../css/blog.css">
+</head>
+
+<body>
+
+<div class="page">
+      <header class="container clearfix debug">
+
+        <nav class="m-r-s fl-r m-t-xs">
+          <ul class="lis-n debug">
+            <li class="fl-l pad-s debug"><a href="../projects/index.html"> Projects </a></li>
+            <li class="fl-l pad-s debug"><a href="../about.html"> About Me </a></li>
+            <li class="fl-l pad-s debug"><a href="../contact.html"> Contact </a></li>
+            <li class="fl-l pad-s debug"><a href="index.html"> Blog </a></li>
+          </ul>
+        </nav>
+
+        <div class="avatar m-t-xs m-l-s debug">
+          <img src="../imgs/avatar.png" width="40px" height="40px" class="avatar-img fl-l debug">
+          <h4 class="pad-s debug"><a href="../index.html"> Natasha Thapliyal </a></h4>
+        </div>
+
+      </header>
+
+<main role="main" class="container gutters-t gutters-d debug">
+
+  <aside class="fl-l blog-archive m-t-m m-l-s debug">
+      <h3> Archive </h3>
+     <ul class="lis-n">
+        <li><a href="git.html"> Git </a></li>
+        <li><a href="css-concepts.html"> CSS Concepts </a></li>
+        <li><a href="arrays-hashes.html"> Arrays & Hashes </a></li>
+        <li><a href="enumerable-methods.html"> Enumerable Methods </a></li>
+        <li><a href="ruby-classes.html"> Ruby Classes </a></li>
+        <li><a href="javascript.html"> Javascript </a></li>
+        <li><a href="tech.html"> SQL Optimization </a></li>
+      </ul>
+  </aside>
+
+  <article class="m-t-m m-b-s blog-post debug">
+    <h2> SQL Optimization </h2>
+    <h3> Cuz There's So Much Freakin' Data to Sift Through </h3>
+    <h4> November 20, 2015</h4>
+    <br>
+    <h4> Optimizing SQL </h4>
+        <p> SQL, or Structured Query Language, is a language used to communicate with databases so you can pull the information you want from them. The langauge reads much like English, using words like SELECT and FROM to select what you want to select and from what table. I'm fairly new to this realm of databases so I don't know much, but apparently the language could use some optimization in order to make query results more efficiently. </p>
+        <p> Databases, consisting of tables, can have millions of rows of information. Using commands like SELECT row_name, row_name FROM table_name ORDER BY some_id ASC will get the job done as far as pulling the data you request, but when you're dealing with <em>millions</em> of table rows, how effective is using the above mentioned command? Do you really have the time and energy to sift through hundreds of rows? I think not. This is where optimization can come in. After doing some research, I found some tips on how to optimize SQL searches. Here are a few (source citations are at the end of the post): (this list is a work in progress)</p>
+
+     <br>
+
+      <h4> Understanding Indexes </h4>
+        <p> Apparently indexes in tables are commonly misunderstood among SQL noobs (like me). Index values in a database table are simply non-significant numerical values that serve as counters for rows. Indexes are significant in that they provide structure to the table itself as opposed to changing the table data. It's common that beginners index everything, without understanding that doing so will make it harder to insert, delete, and update rows later. The way databases handle long lists of indexes is via doubly linked lists or leaf nodes. </p>
+        <p> A doubly linked list organizes the index in a logical way, as opposed to in a physical way. If an insertion needs to be made, a new node is created between pre-exisiting nodes, with the pre-existing nodes including links to the new node. This method of connecting new insertions to pre-existing ones via links results in a tree like structure and most importantly, no obstruction to the index values. The problem with this leaf node structure is that the computer must traverse all nodes when searching for an index, resulting in slow serach times. Since I just learned about how databases are structured like, literally two days ago, this all seems rather abstract to me. But it's good to know that there are ways in which databases deal with the hardline ascending numerical structure of indexes. </p>
+
+        <br>
+
+       <h4> Symbol Operators </h4>
+          <p> Using the '*' symbol will pull all columns from a table that fit a certain condition defined later in the command. But sometimes you can pull columns you don't need so it's best to specify the exact column names after SELECT that you wish to pull data from. Also, the LIMIT clause may come in handy when you don't want rows on rows on rows getting spat back at you; LIMIT will reduce the amount of rows being pulled to whatever you specify. </p>
+          <p> Another way to shorten search time is to provide more precise conditions for the number of columns requested to be pulled. For example, to search for a values up to 10, it'd be more efficient to query >= 10, as opposed to > 11, in which case the computer would jump to value 11 then back to 10.  </p>
+          <p> It is best to avoid using the NOT operator because not only will the correct data be sifted through and pulled, all the information that is not what you want pulled will be searched too, thus slowing query time. </p>
+
+          <br>
+
+        <h4> More tips to come </h4>
+          <p> I will keep adding tips to optimize SQL searches once I continue to learn about how these database shenangians work. Stay tuned! </p>
+
+
+  </article>
+
+</main>
+
+</div>
+
+   <footer class="site-footer debug">
+      <a href="https://instagram.com/nnatsho/" target="_blank"><img src="../imgs/social-media-icons/instagram.png" class="fl-r m-r-s m-b-xs debug"></a>
+      <a href="https://www.linkedin.com/in/natashathapliyal" target="_blank"><img src="../imgs/social-media-icons/linkedin.png" class="social-media-icon fl-r m-b-xs debug"></a>
+      <a href="https://github.com/natasha-t" target="_blank"><img src="../imgs/social-media-icons/github.png" class="social-media-icon fl-r m-b-xs debug"></a>
+      <a href="https://www.facebook.com/natasha.thapliyal" target="_blank"><img src="../imgs/social-media-icons/facebook.png" class="social-media-icon m-r-xxs fl-r m-b-xs debug"></a>
+    </footer>
+
+</body>
+</html>
